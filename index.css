@@ -1,0 +1,59 @@
+body {
+background-color: black;
+}
+
+.btn {
+position: absolute;
+margin-top: 5%;
+margin-left: 40%;
+}
+
+a {
+background-color: black;
+color: red;
+text-decoration: none;
+text-transform: uppercase;
+line-height: 37px;
+text-align: center;
+border-radius: 40px;
+width: 10%;
+height: 4%;
+border-style: solid;
+border-width: 5px;
+}
+
+a:hover {
+border-width : 0px;
+background-color: black;
+animation: htmlhack 8s linear infinite;
+}
+
+a:before {
+content: "";
+position: absolute;
+top: 0%;
+left: 0%;
+right: 0%;
+bottom: 0%;
+z-index: -1;
+background: linear-gradient(45deg, red, orange, yellow, lime, green, cyan, blue, violet, purple);
+background-size: 400%;
+opacity: 0;
+transition: 0.5%;
+}
+
+a:hover:before {
+filter: blur(10px);
+border-radius: 40px;
+opacity: 1;
+animation: htmlhack 8s linear infinite;
+}
+
+@keyframes htmlhack {
+ 0% {
+  background-position: 0%;
+  }
+ 100% {
+  background-position: 400%;
+  }
+}  
